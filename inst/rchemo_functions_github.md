@@ -141,6 +141,10 @@
 #### <span style="color:#1589F0"> SELECTION OF VARIABLES </span>
 
 - ***covsel*** COVSEL algorithm (Roger et al. 2011)
+- ***covsellm*** COVSEL algorithm associated to linear regression model
+- ***covselrda*** COVSEL algorithm associated to regression discriminant analysis
+- ***covsellda*** COVSEL algorithm associated to linear discriminant analysis
+- ***covselqda*** COVSEL algorithm associated to quadratic discriminant analysis
 
 #### <span style="color:#1589F0"> DATA MANAGEMENT </span>
 
