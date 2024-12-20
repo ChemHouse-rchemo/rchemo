@@ -100,6 +100,10 @@ S3method(transform, Soplsrda)
 S3method(predict, Soplsprobda) 
 S3method(transform, Soplsprobda)
 
+S3method(predict, Covsellmr)
+S3method(predict, Covselprobda)
+S3method(predict, Covselrda)
+
 #exportMethods("transform", "coef", "predict")
 #exportClasses("PcaOrtho", "PlsOrtho", 
 #              "Dmnorm", "Lda", "Qda", "Plsda", "PlsDaProb",

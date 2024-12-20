@@ -19,14 +19,13 @@ Noting \eqn{D} a (\eqn{n, n}) diagonal matrix of weights for the observations (r
 
 - \code{pcasvd}: SVD factorization of \eqn{D^(1/2) * X}, using function \code{\link{svd}}. 
 
-- \code{pcaeigen}:Eigen factorization of \eqn{X' * D * X}, using function \code{\link{eigen}}.
+- \code{pcaeigen}: Eigen factorization of \eqn{X' * D * X}, using function \code{\link{eigen}}.
 
 - \code{pcaeigenk}: Eigen factorization of \eqn{D^(1/2) * X * X' D^(1/2)}, using function \code{\link{eigen}}. This is the "kernel cross-product trick" version of the PCA algorithm (Wu et al. 1997). For wide matrices (\eqn{n << p}) and \eqn{n} not too large, this algorithm can be much faster than the others. 
 
 - \code{pcanipals}: Eigen factorization of \eqn{X' * D * X} using NIPALS. 
 
 - \code{pcanipalsna}: Eigen factorization of \eqn{X' * D * X} using NIPALS allowing missing data in \eqn{X}. 
-
 
 - \code{pcasph}: Robust spherical PCA (Locantore et al. 1990, Maronna 2005, Daszykowski et al. 2007). 
 
@@ -116,6 +115,20 @@ A list of outputs, such as:
 \item{niter}{Numbers of iterations of the NIPALS.}
 
 \item{conv}{Logical indicating if the NIPALS converged before reaching the maximal number of iterations.}
+
+For \code{transform.Pca}: X-scores matrix for new Xlist-data.
+
+For \code{summary.Pca}:
+
+\item{explvarx}{matrix of explained variances.}
+
+\item{contr.ind}{observation contributions.}
+
+\item{contr.var}{variable contributions.}
+
+\item{coord.var}{variable coordinates.}
+
+\item{cor.circle}{variable coordinates on the correlation circle.}
 
 }
 
