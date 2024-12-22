@@ -71,6 +71,8 @@ A list of outputs, such as
 
 \item{T}{The X-score matrix (\eqn{n, nlv}).}
 
+\item{Tk}{The partial X-score matrix from each Xlist matrix (\eqn{n, nlv}).}
+
 \item{P}{The X-loadings matrix (\eqn{p, nlv}).}
 
 \item{sv}{The singular values (\eqn{min(n, p), 1}) except for NIPALS = (\eqn{nlv, 1}).}
@@ -96,6 +98,8 @@ For \code{transform.Consensuspca}: X-scores matrix for new Xlist-data.
 For \code{summary.Consensuspca}:
 
 \item{explvarx}{matrix of explained variances.}
+
+\item{contr.block}{block contributions.}
 
 \item{contr.ind}{observation contributions.}
 
